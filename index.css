@@ -1,0 +1,159 @@
+*{  margin: 0; padding: 0;
+     font-family: "Racing Sans One" , "Black Han Sans", serif;
+    font-weight: 400; color: #fff; font-size: 10px;
+    font-style: normal; background-color: #111;
+    text-decoration: none; list-style: none; box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+a{color: #fff;}
+/* base End */
+
+header{ margin: auto; display: flex; 
+    align-items: center; border-bottom: 2px solid rgba(255,255,255,0.6);
+    width: 95vw; height: 15rem; }
+/* header End */
+
+.logo{padding: 3rem; display: inline-block; position: relative; text-align: left;
+    align-content: center; cursor: pointer; margin-right: 10rem;
+    width: 34rem; height: 12rem;}
+.logo span{font-size: 5rem; display: inline-block;
+    transition: transform 1s ease, opacity 0.1s ease;
+    transform-origin: left center;}
+.logo_default{opacity: 1; transform: scaleX(1);}
+.logo_hover{position: absolute; top: 3rem; left: 3rem; opacity: 0;
+transform: scaleX(0);}
+.logo:hover .logo_default{opacity: 0; transform: scaleX(0);}
+.logo:hover .logo_hover{opacity: 1; transform: scaleX(1);}
+/* logo End */
+
+nav{ width: 40rem; height: 12rem;
+margin-right: 20rem; padding: 1rem;}
+nav ul{display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+width: 100%; height: 90%; gap: 1.5rem;}
+nav ul li{width: 45%; height: 50%; align-items: center;
+text-align: center; display: flex; justify-content:space-between; } 
+nav ul li .p_wrap{height: 3rem; margin-top: 2rem;}
+.nav_underline{width: 0; height: 0.1rem; background-color: #fff;
+transform-origin: left center; margin-top: 0.5rem; opacity: 0; 
+transform:scaleX(0); transition: transform 0.5s ease, width 0.5s ease;}
+nav ul li a:hover .nav_underline{width: 100%; opacity: 1;transform: scaleX(1); }
+nav ul li p span{font-size: 1.8rem;}
+nav ul li p span:first-child{margin-right: 1rem;}
+/*  nav End */
+
+.active_menus{width: 50rem; height: 10rem; 
+display: flex; gap:10rem; justify-content: space-evenly; align-items: end;
+ text-align: center;}
+.active_menus ul li{ display: flex;}
+.active_menus ul li span {margin-right: 15px; font-size: 1.5rem; 
+    line-height: 6rem; }
+.active_menus ul li .act_tap{margin-right: 6px; font-size: 2.2rem;
+color: #b4b2b2; cursor: pointer;}
+.active_menus ul li .act_tap.partition{cursor:default}
+.active_menus ul li .act_tap.active{ color: #fff; font-size: 2.4rem;
+    cursor:default}
+/* active End */
+
+
+.AboutMe{width: 95vw; margin: auto; border-bottom: 2px solid rgba(255,255,255,0.6)}
+section h2{font-size: 2rem; margin-top: 2rem;}    
+section h1{font-size: 3rem; text-indent: 12rem;}
+#textSlide{position: relative; overflow: hidden; width: 95vw; height: 55rem;
+background-color: #111; margin: 4rem auto 8rem; }
+.keyword{position: absolute; white-space: nowrap; font-size:10rem;
+animation-name: moveLeft; animation-timing-function: linear;
+animation-iteration-count: infinite; animation-play-state: running; 
+left: 100%; background-color: transparent;}
+@keyframes moveLeft{
+    0% {left: 100%;}
+    100%{left: -100%;}
+}
+/* text slide End */
+
+
+.MySkills{width: 95vw; height: 80rem; margin:10rem auto; padding-bottom: 8rem;
+    border-bottom: 2px solid rgba(255,255,255,0.6) }
+.chart-container{width: 100%; height: 80%; display: flex; justify-content: space-around;
+margin: 3rem auto; align-items: flex-start; gap: 4rem;}
+.chart-box{width: 800px; height: 600px; background-color: transparent; }
+canvas{width: 100%; height: 100%;}
+/* skill chart End */
+
+
+.Portfolio{width: 95vw; height: 80rem; margin:10rem auto; padding-bottom: 8rem;
+    border-bottom: 2px solid rgba(255,255,255,0.6) }
+.portfolio-list{width: 70%; height: 60rem;display: flex; flex-direction: row; 
+    flex-wrap: wrap;justify-content: center; align-items: center; margin:5rem auto;
+ gap: 8rem;}
+.portfolio-item{width: 20rem; height: 20rem;   position: relative;
+text-align: center; transition: transform 0.3s ease-in-out;}
+.portfolio-item:hover{transform: scale(1.1);}
+.portfolio-item img{width: 20rem; height: 16rem; background-color: #fff; padding: 1rem;
+border-radius: 2rem; object-fit: contain; transition: transform 0.3s ease-in-out;}
+.portfolio-item:hover img{transform: scale(1.1);}
+.portfolio-item:last-child::after {content: none;}
+/* portfolio End */
+
+
+
+.Contact{width: 95vw; height: 80rem; margin:10rem auto; padding-bottom: 8rem;
+    border-bottom: 2px solid rgba(255,255,255,0.6)}
+.contact-box{width: 100%; height: 50rem;display: flex; 
+ justify-content: space-evenly; align-items: center; margin:5rem auto 8rem;
+ gap: 8rem; }
+.contact-container{width: 60%; height: 100%; display: flex; justify-content: center;
+align-items: center; gap: 8rem;}
+.contact-item{width: 20rem; height: 30rem;   position: relative; 
+    text-align: center; transition: transform 0.3s ease-in-out;}
+.contact-item:hover{transform: scale(1.1);}
+.my-profile{width: 65rem; height: 40rem; border: 2px solid #b4b2b2;border-radius: 2rem;
+    display: flex; justify-content: space-around; align-items: center;}
+.my-profile img{width: 25rem; height: 30rem; background-color: #fff; padding: 1rem;
+    border-radius: 2rem; object-fit: contain; transition: transform 0.3s ease-in-out;}
+.my-profile img:hover{transform: scale(1.1);}
+.contact-item img{width: 20rem; height: 24rem; background-color: #fff; padding: 1rem;
+border-radius: 2rem; object-fit: contain; transition: transform 0.3s ease-in-out;}
+.contact-item:hover img{transform: scale(1.1);}
+.contact-item:hover .contact-item{font-size: 4rem;}
+/* contact End */
+
+.topBtn{position: fixed;  bottom: 5rem; right: 5rem; 
+    font-size:3rem; background-color: transparent;
+line-height: 8rem; padding: 0 1rem; text-align: center; cursor: pointer;
+transition: opacity 0.3s, transform 0.3s;} 
+.topBtn span{font-size:3rem;}
+/* topBtn End */
+
+.modalBtn{position: fixed; top:5rem; right: 4rem; width: 4rem; height: 2rem;
+ display: flex; flex-direction: column; background-color: transparent;
+justify-content: space-between; cursor: pointer; z-index: 1000;} 
+.modalBtn hr{width: 100%; height: 2px;  background-color: #fff; 
+    border: none; transition: 0.3s;}
+.modalBtn.active hr:nth-child(1){
+    transform: rotate(30deg) translateY(10px);}
+.modalBtn.active hr:nth-child(2){opacity: 0;}
+.modalBtn.active hr:nth-child(3){
+    transform: rotate(-30deg) translateY(-10px);}
+/* modalBtn End */
+.modalOverlay{position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+background-color: #111; display: flex; align-items: center; justify-content: right;
+opacity: 0; visibility: hidden; 
+transition: opacity 0.3s, visibility 0.3s; z-index: 999;}
+.modalBox{ width: 50rem; height: 80%; padding: 5rem;  display: flex; flex-direction: column;
+    justify-content: space-around; background-color: transparent;
+    border-radius: 2rem;}
+.modalOverlay.active{opacity: 1; visibility: visible;}
+
+.modalBox ul{display: flex; flex-direction: column; justify-content: center; 
+    width: 100%; height: 90%; gap: 1.5rem;}
+.modalBox ul li{width: 100%; height: 50%; align-items: center;
+    text-align: center; display: flex; justify-content:space-between; } 
+.modalBox ul li .p_wrap{height: 3rem; margin-top: 2rem;}
+.m_underline{width: 0; height: 0.1rem; background-color: #fff;
+    transform-origin: left center; margin-top: 0.5rem; opacity: 0; 
+    transform:scaleX(0); transition: transform 0.5s ease, width 0.5s ease;}
+.modalBox ul li a:hover .m_underline{width: 100%; opacity: 1;transform: scaleX(1); }
+.modalBox ul li p span{font-size: 5rem;}
+.modalBox ul li p span:first-child{margin-right: 1rem;}
+/* modal End */
+
+

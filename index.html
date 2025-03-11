@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100..900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>CW's portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <span class="logo_default">CW</span>
+                <span class="logo_hover">CHANGWOO</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="p_wrap">
+                            <p> 
+                                <span>01</span>
+                                <span>About Me</span>
+                            </p>
+                            <div class="nav_underline"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Portfolio">
+                        <div class="p_wrap">
+                            <p>
+                                <span>03</span>
+                                <span>Portfolio</span>
+                            </p>
+                            <div class="nav_underline"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#MySkills">
+                        <div class="p_wrap">
+                            <p>
+                                <span>02</span>
+                                <span>My skills</span>
+                            </p>
+                            <div class="nav_underline"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contact">
+                        <div class="p_wrap">
+                            <p>
+                                <span>04</span>
+                                <span>Contact</span>
+                            </p>
+                            <div class="nav_underline"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="active_menus">
+            <ul>
+                <li>
+                    <span>Motion</span>
+                    <span class="act_tap active" id="autoBtn">Auto</span>
+                    <span class="act_tap partition">/</span>
+                    <span class="act_tap" id="pauseBtn">Pause</span>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span>Languege</span>
+                    <a href="#"><span class="act_tap ">Kor</span></a>
+                    <span class="act_tap partition">/</span>
+                    <a href="#"><span class="act_tap active">Eng</span></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+
+        </div>
+    </header>
+<!--    header End-->
+    <section class="AboutMe" id="AboutMe">
+        <h2>01 &nbsp&nbsp About Me</h2>
+        <h1>My Keyword</h1>
+        <div id="textSlide"></div>
+    </section>
+<!--    textSlide End-->
+    <section class="MySkills" id="MySkills">
+        <h2>02 &nbsp&nbsp My Skills</h2>
+        <h1>Skill chart</h1>
+        <div class="chart-container">
+            <div class="chart-box">
+                <canvas id="skill-chart1"></canvas>
+            </div>
+            <div class="chart-box">
+                <canvas id="skill-chart2"></canvas>
+            </div>
+        </div>
+    </section>
+<!--    skill chart End-->
+    <section class="Portfolio" id="Portfolio">
+        <h2>03 &nbsp&nbsp Potfolio</h2>
+        <h1>Load to be a developer</h1>
+        <div class="portfolio-list">
+            <div class="portfolio-item">
+                <a href="http://kcw0827.dothome.co.kr/calculator/main.html"><img src="./images/cal.png" alt="cal logo"></a>
+                <h2>calculator</h2>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="./images/logo_erom.png" alt="erom logo"></a>
+                <h2>erom copy page</h2>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="./images/sapporologo.png" alt="sapporo logo"></a>
+                <h2>sapporo trip page</h2>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="./images/api.png" alt="api logo"></a>
+                <h2>weather api</h2>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="./images/slogan.png" alt="haeundae logo"></a>
+                <h2>team project</h2>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="./images/twins_logoB.png" alt="twins logo"></a>
+                <h2>LG twins page</h2>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="" alt=""></a>
+                <h2></h2>
+            </div>
+            <div class="portfolio-item">
+                <a href="#"><img src="" alt=""></a>
+                <h2></h2>
+            </div>
+        </div>
+    </section>
+<!--    portfolio End-->
+    <section class="Contact" id="Contact">
+        <h2>04 &nbsp&nbsp Contact</h2>
+        <h1>Profile</h1>
+        <div class="contact-box">
+            <div class="my-profile">
+                <img src="./images/me.jpg" alt="">
+                <div>
+                    <h2>Kim changwoo</h2>
+                    <h2>1987.08.27</h2>
+                    <h2>Ajou University</h2>
+                    <h2>Business Administration</h2>
+                    <h2>Developer</h2>
+                </div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <a href="mailto:rlackddnrlac@naver.com" target="_blank"><img src="./images/mail.png" alt="mail logo"></a>
+                    <h2>mail</h2>                
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/Kimchang-woo?tab=repositories" target="_blank"><img src="./images/git.png" alt="git logo"></a>
+                    <h2>git</h2>                
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.instagram.com/changwoo0827?igsh=MTh1Y2ExdGltNHo2aQ==" target="_blank">
+                        <img src="./images/insta.png" alt="instagram logo">
+                    </a>
+                    <h2>instagram</h2>               
+                </div>
+                <div class="contact-item">
+                    <a href="https://storage.googleapis.com/guestcw2/index.html" target="_blank"><img src="./images/guest.png" alt="guestbook logo"></a>
+                    <h2>guestbook</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--    contact End-->
+    <div class="topBtn">To the Down▼</div>
+<!--    topbutton End-->
+    <div class="modalBtn">
+        <hr>
+        <hr>
+        <hr>
+    </div>
+<!-- modalBtn End -->
+    <div class="modalOverlay"> 
+        <div class="modalBox">
+            <ul>
+                <li>
+                    <a href="#AboutMe">
+                        <div class="m_wrap">
+                            <p> 
+                                <span>01</span>
+                                <span>About Me</span>
+                            </p>
+                            <div class="m_underline"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#MySkills">
+                        <div class="m_wrap">
+                            <p>
+                                <span>02</span>
+                                <span>My skills</span>
+                            </p>
+                            <div class="m_underline"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Portfolio">
+                        <div class="m_wrap">
+                            <p>
+                                <span>03</span>
+                                <span>Portfolio</span>
+                            </p>
+                            <div class="m_underline"></div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Contact">
+                        <div class="m_wrap">
+                            <p>
+                                <span>04</span>
+                                <span>Contact</span>
+                            </p>
+                            <div class="m_underline"></div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+<!--    modalbox End-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./index.js"></script>   
+</body>
+</html>
